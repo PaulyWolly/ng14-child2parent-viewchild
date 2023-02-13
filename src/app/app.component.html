@@ -1,0 +1,18 @@
+<app-roof></app-roof>
+<div class="container">
+
+  <div class="parentroom">
+
+    <div class="receivedMessages">
+      <div class="child1">
+        <p><b>Message from Child1</b><br> via ChildView():</p>
+        <p>{{ currentMsgToParent }}</p>
+        <ul *ngFor="let item of msgFromChild1">
+          <li>{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <app-child1></app-child1>
+</div>
